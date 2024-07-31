@@ -1,0 +1,130 @@
+.inc_af_block.af_cart_page {
+  &.inc_recommendations {
+    clear: both;
+    border-top: none;
+    background: transparent;
+    padding: 0px 0px 0px;
+    margin-bottom: 20px;
+    position: relative;
+    margin-top: 20px;
+    @include media_query("1268", "max") {
+      max-width: 90%;
+    }
+    @include media_query("1190", "max") {
+      padding-bottom: 10px;
+    }
+    @include media_query("820", "max") {
+      border-bottom: none;
+      margin-top: 0;
+     padding: 25px 0px 0px;
+      margin-bottom: 0;
+   
+      border: none;
+    }
+    .inc_af_title_block {
+      border-top: 1px solid #2c2c2c;
+      width: 78%;
+      margin: 0 auto;
+      padding: 20px 0 30px;
+      @include media_query("820", "max") {
+        border: none;
+        width: 100%;
+        padding: 0px 0 30px;
+      }
+      .inc_af_title_text_block {
+        color: $text_color_2;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+
+        font-family: $font-family;
+
+        @include media_query("371", "max") {
+          font-size: 16px;
+        }
+      }
+    }
+    .inc_af_bundles_block {
+      padding-bottom: 0px;
+      max-width: 1236px;
+      @include media_query("1268", "max") {
+        padding-right: unset;
+      }
+      @include media_query("820", "max") {
+        margin: 0 8px 0 4px;
+        padding-bottom: 8px;
+      }
+
+      .inc_af_left_btn_img {
+        z-index: 1;
+        transform: rotate(0deg);
+        background: $background_color url(../images/sprite.svg) -2px -353px/50px
+          no-repeat;
+        position: unset;
+        z-index: 1;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+      }
+
+      .inc_af_product-list-main_block {
+        .inc_af_product-list_block {
+          @include media_query("1201", "max") {
+            padding-bottom: 10px;
+          }
+          .inc_product_module_block {
+            padding: 0 0px 0 3px;
+            @include media_query("1201", "max") {
+              margin-bottom: 0;
+              padding: 0 10px 0 3px;
+            }
+            .inc_product_showcase_block {
+              .inc_product_block {
+                margin: auto 5px;
+                width: 210px;
+                @include media_query("1201", "max") {
+                  padding-bottom: 0;
+                  margin: auto 0px;
+                }
+                .inc_product_img_block {
+                  padding: 0px 16px 0px;
+                  .inc_product_img_main_block {
+                    .inc_product_img_main_img {
+                      height: 254px;
+                      margin-bottom: 20px;
+                      @include media_query("820", "max") {
+                        height: 200px;
+                      }
+                      img {
+                        padding-top: 10px;
+                      }
+                    }
+                  }
+                }
+                .inc_product_desc_block {
+                  padding: 0 0px 15px 0px;
+                  @include media_query("1201", "max") {
+                    padding-bottom: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .inc_af_right_btn_img {
+        background: $background_color url(../images/sprite.svg) -2px -353px/50px
+          no-repeat;
+        position: unset;
+        right: -60px;
+        bottom: 44%;
+        z-index: 1;
+        cursor: pointer;
+        transform: rotate(180deg);
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+}
